@@ -1,0 +1,66 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prod": "nodemon server.js --config nodemon.json --prod",
+    "dev": "nodemon server.js --config nodemon.json --dev"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "public/*"
+    ]
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@types/mongoose": "^5.10.5",
+    "axios": "^1.2.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.1",
+    "hpp": "^0.2.3",
+    "html-to-text": "^9.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.19",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.8.0",
+    "pug": "^3.0.2",
+    "sharp": "^0.31.3",
+    "slugify": "^1.6.5",
+    "stripe": "^11.5.0",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/stripe": "^8.0.417",
+    "@types/validator": "^13.7.10",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "parcel": "^2.8.2",
+    "prettier": "^2.7.1",
+    "rollup": "^3.7.5",
+    "vite": "^4.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
