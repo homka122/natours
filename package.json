@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "prod": "nodemon server.js --config nodemon.json --prod",
-    "dev": "nodemon server.js --config nodemon.json --dev"
+    "dev": "nodemon server.js --config nodemon.json --dev",
+    "watch:js": "vite build"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "@types/mongoose": "^5.10.5",
     "axios": "^1.2.1",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

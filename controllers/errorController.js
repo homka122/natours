@@ -86,8 +86,6 @@ const sendErrorProd = (err, req, res) => {
 
 // eslint-disable-next-line import/prefer-default-export
 export const globalErrorHandler = (err, req, res, next) => {
-  // console.log(err.message);
-
   err.statusCode = err.statusCode || 500;
   err.status = err.status || 'error';
 

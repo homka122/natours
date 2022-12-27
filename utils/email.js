@@ -13,7 +13,6 @@ export default class Email {
 
   newTransport() {
     if (process.env.NODE_ENV === 'production') {
-      console.log('prod');
       return nodemailer.createTransport({
         service: 'SendinBlue',
         auth: {
@@ -53,13 +52,10 @@ export default class Email {
 
     // 3) Create a transport and send email
     try {
-      console.log(await this.newTransport().sendMail(mailOptions));
+      await this.newTransport().sendMail(mailOptions);
     } catch (err) {
       console.log(err);
     }
-    console.log(
-      `SEND EMAIL: ${this.from} ${this.to} ${process.env.EMAIL_HOST}`
-    );
   }
 
   async sendWelcome() {
