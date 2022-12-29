@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "prod": "nodemon server.js --config nodemon.json --prod",
-    "dev": "nodemon server.js --config nodemon.json --dev",
-    "watch:js": "vite build"
+    "watch:prod": "nodemon server.js --config nodemon.json --prod",
+    "watch:dev": "nodemon server.js --config nodemon.json --dev",
+    "start:prod": "node server.js --prod",
+    "start:dev": "node server.js --dev",
+    "watch:vite": "vite build"
   },
   "keywords": [],
   "author": "",
